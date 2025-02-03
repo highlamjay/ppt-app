@@ -101,16 +101,16 @@ const Home = () => {
         },
     ];
     return (
-        <div className="w-full h-full scrollbar-hidden">
+        <div className="w-full h-full scrollbar-hidden overflow-auto">
             {/* Full-screen banner */}
             <Banner className="w-full"/>
 
             {/* Service section */}
-            <ServiceSection className="h-auto sm:h-screen"/>
+            <ServiceSection className="h-auto sm:h-screen overflow-auto"/>
 
             {/* Portfolio section */}
             <div 
-                className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#187ac5] to-[#5daefc] text-white py-20 border-t-4 border-[#0A2A43]"
+                className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#187ac5] to-[#5daefc] text-white py-20 border-t-4 border-[#0A2A43] overflow-auto"
             >
                 <div className="text-center px-4 sm:px-10">
                     <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-5 relative top-[-40px] sm:top-[-50px]">

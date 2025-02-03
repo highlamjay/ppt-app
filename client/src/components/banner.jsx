@@ -27,9 +27,10 @@ const Banner = () => {
                             Khám phá
                     </button>
                 </div>
-                {/* Adding the circular gradient bubble behind the image */}
+                
+                {/* Circular gradient bubble, hidden on small screens */}
                 <div
-                    className="background-shapes"
+                    className="background-shapes hidden sm:block"
                     style={{
                         position: 'absolute',
                         top: '-20px',
@@ -42,7 +43,8 @@ const Banner = () => {
                     }}>
                 </div>
 
-                <div className="absolute top-2 right-0 max-w-3xl z-20 transform translate-x-30">
+                {/* Person image, hidden on small screens */}
+                <div className="absolute top-2 right-0 max-w-3xl z-20 transform translate-x-30 hidden sm:block">
                     <img src={person} alt="Person with Laptop" className="filter drop-shadow-lg" />
                 </div>
             </div>

@@ -1,14 +1,14 @@
-import social from "../assets/images/social (1).png"
-import mail from "../assets/images/mail.png"
-import video from "../assets/images/video.png"
+import social from "../assets/images/social (1).png";
+import mail from "../assets/images/mail.png";
+import video from "../assets/images/video.png";
 
 const Footer = () => {
     return (
         <footer className="bg-gradient-to-b from-[#0A2A43] to-[#02172E] scrollbar-hidden text-white py-10">
             <div className="container mx-auto px-4">
-                <div className="flex justify-between">
+                <div className="flex flex-col sm:flex-row justify-between">
                     {/* Cột trái */}
-                    <div className="flex flex-col items-start space-y-2">
+                    <div className="flex flex-col items-start space-y-2 mb-8 sm:mb-0">
                         <h2 className="text-4xl font-bold pt-8">
                             <p className="font-light text-3xl">Kỹ Sư</p>
                             <strong>PowerPoint</strong>
@@ -16,7 +16,7 @@ const Footer = () => {
                     </div>
 
                     {/* Cột phải */}
-                    <div className="flex flex-col items-start space-y-4 pr-60">
+                    <div className="flex flex-col items-start space-y-4 sm:pr-60">
                         <h3 className="text-2xl">LIÊN HỆ</h3>
                         <ul className="space-y-3">
                             <li className="flex items-center space-x-3">
