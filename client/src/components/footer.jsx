@@ -4,7 +4,7 @@ import video from "../assets/images/video.png"
 
 const Footer = () => {
     return (
-        <footer className="bg-gradient-to-b from-[#0A2A43] to-[#02172E] text-white py-10">
+        <footer className="bg-gradient-to-b from-[#0A2A43] to-[#02172E] scrollbar-hidden text-white py-10">
             <div className="container mx-auto px-4">
                 <div className="flex justify-between">
                     {/* Cột trái */}

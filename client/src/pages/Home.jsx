@@ -106,14 +106,14 @@ const Home = () => {
             <Banner className="w-full"/>
 
             {/* Service section */}
-            <ServiceSection className="h-screen"/>
+            <ServiceSection className="h-auto sm:h-screen"/>
 
             {/* Portfolio section */}
-            <section 
+            <div 
                 className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#187ac5] to-[#5daefc] text-white py-20 border-t-4 border-[#0A2A43]"
             >
-                <div className="text-center">
-                    <h2 className="text-4xl font-bold mb-5 relative top-[-40px]">
+                <div className="text-center px-4 sm:px-10">
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-5 relative top-[-40px] sm:top-[-50px]">
                         PowerPoint Portfolio
                     </h2>
                     <div className="portfolio-container flex flex-wrap justify-center gap-5">
@@ -123,7 +123,7 @@ const Home = () => {
                         <Pagination/>
                     </div>
                 </div>
-            </section>
+            </div>
 
             {/* Footer */}
             <Footer className="bg-gray-800 text-white py-6"/>
