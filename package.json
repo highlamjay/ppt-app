@@ -5,7 +5,7 @@
   "scripts": {
     "client": "npm run dev --prefix client",
     "dev": "concurrently \"npm run client\" ",
-    "build": "npm run build --prefix client"
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
