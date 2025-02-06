@@ -15,8 +15,13 @@ const Banner = ({currentPage}) => {
             
             {/* Logo */}
             <div className="absolute top-10 left-10 z-30">
-                <img src={logo} alt="EngiSlide Logo" className="w-15 h-15 sm:w-15 sm:h-15 " />
+                <img 
+                    src={logo} 
+                    alt="EngiSlide Logo" 
+                    className="w-auto h-15 sm:w-auto sm:h-15 max-w-full max-h-full object-cover"
+                />
             </div>
+
 
             {/* Content Container */}
             <div className="container mx-auto flex flex-col-reverse sm:flex-row justify-between items-center relative z-10 px-6">

@@ -1,5 +1,5 @@
 import React from "react";
-import band from "../assets/images/EngiSlide_JPG01.jpg";
+import band from "../assets/images/logo.jpg";
 
 const Item = ({ image, title, price, link }) => {
   return (
@@ -9,14 +9,15 @@ const Item = ({ image, title, price, link }) => {
       <img 
         src={band} 
         alt="EngiSlide" 
-        className="absolute top-0 left-3 w-16 h-8 object-fill rounded-b-lg"
+        className="absolute top-0 left-3 w-16 h-auto border-x border-b border-white object-contain rounded-b-lg shadow-lg"
       />
+
       
       {/* Hình ảnh sản phẩm */}
       <img 
         src={image} 
         alt={title} 
-        className="w-full h-56 object-cover rounded-lg-tl rounded-lg-tr mb-4"
+        className="w-full h-56 object-cover rounded-lg-tl  rounded-lg-tr mb-4"
       />
 
       {/* Tiêu đề (giới hạn 2 dòng) */}
