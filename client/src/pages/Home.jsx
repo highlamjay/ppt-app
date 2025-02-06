@@ -105,10 +105,10 @@ const Home = () => {
     return (
         <div className="w-full h-full scrollbar-hidden overflow-auto">
             {/* Full-screen banner */}
-            <Banner className="w-full"/>
+            <Banner currentPage={currentPage} className="w-full"/>
 
             {/* Service section */}
-            <ServiceSection className="h-auto sm:h-screen overflow-auto"/>
+            <ServiceSection currentPage={currentPage} className="h-auto sm:h-screen overflow-auto"/>
 
             {/* Portfolio section */}
             <div 

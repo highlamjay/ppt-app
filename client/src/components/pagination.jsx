@@ -1,9 +1,12 @@
 import React from "react";
 
 const Pagination = ({ currentPage, setCurrentPage, totalPages }) => {
-    const goToPage = (page) => {
+    const goToPage = (page, e) => {
+        e.preventDefault();
         if (page >= 1 && page <= totalPages) {
             setCurrentPage(page);
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     };
 
@@ -12,7 +15,7 @@ const Pagination = ({ currentPage, setCurrentPage, totalPages }) => {
             <ul className="flex items-center space-x-4">
                 <li>
                     <button
-                        onClick={() => goToPage(currentPage - 1)}
+                        onClick={(e) => goToPage(currentPage - 1, e)}
                         disabled={currentPage === 1}
                         className={`px-4 py-2 rounded-full border transition-all duration-300 ${
                             currentPage === 1
@@ -26,7 +29,7 @@ const Pagination = ({ currentPage, setCurrentPage, totalPages }) => {
                 {[...Array(totalPages)].map((_, index) => (
                     <li key={index}>
                         <button
-                            onClick={() => goToPage(index + 1)}
+                            onClick={(e) => goToPage(index + 1, e)}
                             className={`px-4 py-2 rounded-full border font-semibold transition-all duration-300 ${
                                 currentPage === index + 1
                                     ? "bg-[#187ac5] text-white"
@@ -39,7 +42,7 @@ const Pagination = ({ currentPage, setCurrentPage, totalPages }) => {
                 ))}
                 <li>
                     <button
-                        onClick={() => goToPage(currentPage + 1)}
+                        onClick={(e) => goToPage(currentPage + 1, e)}
                         disabled={currentPage === totalPages}
                         className={`px-4 py-2 rounded-full border transition-all duration-300 ${
                             currentPage === totalPages
