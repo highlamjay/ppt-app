@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from '../components/footer';
 import Banner from '../components/banner';
 import ServiceSection from '../components/section_service';
@@ -100,6 +100,8 @@ const Home = () => {
           link: "#",
         },
     ];
+
+    const [currentPage, setCurrentPage] = useState(1);
     return (
         <div className="w-full h-full scrollbar-hidden overflow-auto">
             {/* Full-screen banner */}
@@ -120,7 +122,7 @@ const Home = () => {
                         <ItemsSection items={items} />
                         <ItemsSection items={items2}/>
                         <ItemsSection items={items3}/>
-                        <Pagination/>
+                        <Pagination currentPage={currentPage} setCurrentPage={setCurrentPage} totalPages={3}/>
                     </div>
                 </div>
             </div>

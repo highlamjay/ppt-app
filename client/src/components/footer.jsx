@@ -1,6 +1,7 @@
 import social from "../assets/images/social (1).png";
 import mail from "../assets/images/mail.png";
 import video from "../assets/images/video.png";
+import logo from '../assets/images/EngiSlide_PNG05.png'
 
 const Footer = () => {
     return (
@@ -8,11 +9,12 @@ const Footer = () => {
             <div className="container mx-auto px-4">
                 <div className="flex flex-col sm:flex-row justify-between">
                     {/* Cột trái */}
-                    <div className="flex flex-col items-start space-y-2 mb-8 sm:mb-0">
-                        <h2 className="text-4xl font-bold pt-8">
-                            <p className="font-light text-3xl">Kỹ Sư</p>
-                            <strong>PowerPoint</strong>
-                        </h2>
+                    <div className="flex flex-row items-center space-x-2 mb-8 sm:mb-0 justify-center">
+                        <img src={logo} className="w-10 h-10"></img>
+                        <h1 className="text-2xl sm:text-4xl font-light mb-1">
+                            Engi
+                            <strong className="font-semibold">Slide</strong>
+                        </h1>
                     </div>
 
                     {/* Cột phải */}
